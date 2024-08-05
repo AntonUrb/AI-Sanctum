@@ -1,7 +1,7 @@
 body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    min-height: 100vh;
     margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,14 +19,34 @@ body {
     background-color: #1F2937;
     flex: 1;
     flex-shrink: 0;
-    padding: 0 20vh;
+    padding: 5vh 20vh;
+    max-height: 23vh;
 }
+
+/* Hero block */
 
 .block.hero {
     display: flex;
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
+    gap: 16px;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.hero-pic {
+    background-image: url(/img/Neo_Paraman.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
 }
 
 .hero-head {
@@ -44,13 +64,25 @@ body {
     border-radius: 7px;
 }
 
+/* Info block */
+
 .block.info {
     background-color: #E5E7EB;
 }
 
+.info-head {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+/* Quote block */
+
 .block.quote {
     background-color: #c4c4c4;
 }
+
+/* Sign block */
 
 .block.sign {
     background-color: #F9FAF8;
