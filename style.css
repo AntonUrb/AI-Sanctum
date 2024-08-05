@@ -68,12 +68,55 @@ body {
 
 .block.info {
     background-color: #E5E7EB;
+    padding: 3vh 20vh;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .info-head {
-    font-size: 36px;
+    flex: 1;
+    font-size: 30px;
     font-weight: bolder;
     color: #1F2937;
+    align-self: center;
+}
+
+.info-flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    padding: 0 30vh;
+}
+
+.img-text-container {
+    width: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-img {
+    width: 10vh;
+    height: 10vh;
+    border-width: 3px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 10px;
+    /* background-image: url(/img/Neo_Paraman.png); */
+    background-size: contain;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+.info-text {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #5c5c5c;
 }
 
 /* Quote block */
@@ -116,6 +159,6 @@ li {
 .navbar {
     justify-content: space-between;
     gap: 24px;
-    padding: 8px;
-    margin: 8px 0;
+    padding: 0;
+    margin: 12px 0;
 }
