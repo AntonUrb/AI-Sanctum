@@ -26,7 +26,7 @@
             <div>
                 This is where dreams are realized into pictures.
             </div>
-            <button>Sign up</button>
+            <button class="sign-btn">Sign up</button>
         </div>
         <div class="pic-div">
             <div class="hero-pic">
@@ -41,28 +41,28 @@
             </div>
             <div class="info-flex">
                 <div class="img-text-container">
-                    <div class="info-img1">
+                    <div class="info-img one">
                     </div>
                     <div class="info-text">
                         Formula 1 neo-noir
                     </div>
                 </div>
                 <div class="img-text-container">
-                    <div class="info-img2">
+                    <div class="info-img two">
                     </div>
                     <div class="info-text">
                         Formula 1 evergreen
                     </div>
                 </div>
                 <div class="img-text-container">
-                    <div class="info-img3">
+                    <div class="info-img three">
                     </div>
                     <div class="info-text">
                         Hardware circuitry abstract
                     </div>
                 </div>
                 <div class="img-text-container">
-                    <div class="info-img4">
+                    <div class="info-img four">
                     </div>
                     <div class="info-text">
                         Tennis player vector style
@@ -89,14 +89,26 @@
                     Sign up and never look back! You'll have so much fun!
                 </div>
             </div>
-            <button>Sign up</button>
+            <button class="sign-btn2">Sign up</button>
         </div>
     </div>
     <div class="footer">
         Copyright © Sanctonium 2024
     </div>
     <script>
-        console.log("Helllloo wolrd")
+        let button = document.querySelector(".sign-btn");
+        let button2 = document.querySelector(".sign-btn2");
+        let title = document.querySelector(".call-head");
+        let text = document.querySelector(".call-text");
+
+        button.addEventListener("click", thankFunc);
+        button2.addEventListener("click", thankFunc);
+
+        function thankFunc () {
+            title.textContent = "SIKE!"
+            text.textContent = "It doesn't do anything"
+        }
+
     </script>
 </body>
 

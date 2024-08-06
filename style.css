@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: default;
 }
 
 .header {
@@ -68,6 +69,13 @@ body {
     border-radius: 7px;
 }
 
+.block.hero button:hover {
+    border-color: #1d54b9;
+    background-color: #7a99f0;
+    color: #02325f;
+    cursor: pointer;
+}
+
 /* Info block */
 
 .block.info {
@@ -104,60 +112,50 @@ body {
     gap: 8px;
 }
 
-.info-img1 {
+.info-img {
     width: 11vh;
     height: 11vh;
     border-width: 3px;
     border-color: #3882F6;
     border-style: solid;
     border-radius: 10px;
+    box-shadow: 3px 3px #a1c8ff60;
+}
+
+.info-img.one {
     background-image: url(img/F1\ Neon.png);
     background-size: contain;
-    box-shadow: 6px 6px #a1c8ff60;
     /* background-position: center; */
     /* background-repeat: no-repeat; */
 }
 
-.info-img2 {
-    width: 11vh;
-    height: 11vh;
-    border-width: 3px;
-    border-color: #3882F6;
-    border-style: solid;
-    border-radius: 10px;
+.info-img.two {
     background-image: url(img/Green_F1.png);
     background-size: contain;
     background-position: center;
-    box-shadow: 6px 6px #a1c8ff60;
     /* background-repeat: no-repeat; */
 }
 
-.info-img3 {
-    width: 11vh;
-    height: 11vh;
-    border-width: 3px;
-    border-color: #3882F6;
-    border-style: solid;
-    border-radius: 10px;
+.info-img.three {
     background-image: url(img/purple_circuit.png);
-    box-shadow: 6px 6px #a1c8ff60;
     /* background-size: contain; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
 }
 
-.info-img4 {
-    width: 11vh;
-    height: 11vh;
-    border-width: 3px;
-    border-color: #3882F6;
-    border-style: solid;
-    border-radius: 10px;
+.info-img.four {
     background-image: url(img/Tennis_player.png);
     background-size: contain;
-    box-shadow: 6px 6px #a1c8ff60;
     /* background-position: center; */
     /* background-repeat: no-repeat; */
+}
+
+.info-img:hover {
+    border-width: 3px;
+    border-color: #0d3068;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 6px 6px #265ba59c;
 }
 
 .info-text {
@@ -231,6 +229,13 @@ body {
     border-radius: 7px;
 }
 
+.block.sign button:hover {
+    border-color: #6b8be2;
+    background-color: #7a99f0;
+    color: #02325f;
+    cursor: pointer;
+}
+
 ul {
     display: flex;
 }
@@ -238,6 +243,7 @@ ul {
 li {
     list-style: none;
     align-self: center;
+    cursor: pointer;
 }
 
 .logo {
