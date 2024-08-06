@@ -32,7 +32,7 @@ body {
     font-size: 18px;
     color: #E5E7EB;
     gap: 16px;
-    background-image: url(img/Neo_Paraman.png);
+    background-image: url(../img/Neo_Paraman.png);
     background-position: 0 calc(42%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,28 +123,28 @@ body {
 }
 
 .info-img.one {
-    background-image: url(img/F1\ Neon.png);
+    background-image: url(../img/F1\ Neon.png);
     background-size: contain;
     /* background-position: center; */
     /* background-repeat: no-repeat; */
 }
 
 .info-img.two {
-    background-image: url(img/Green_F1.png);
+    background-image: url(../img/Green_F1.png);
     background-size: contain;
     background-position: center;
     /* background-repeat: no-repeat; */
 }
 
 .info-img.three {
-    background-image: url(img/purple_circuit.png);
+    background-image: url(../img/purple_circuit.png);
     /* background-size: contain; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
 }
 
 .info-img.four {
-    background-image: url(img/Tennis_player.png);
+    background-image: url(../img/Tennis_player.png);
     background-size: contain;
     /* background-position: center; */
     /* background-repeat: no-repeat; */
