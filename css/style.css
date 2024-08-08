@@ -6,6 +6,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     cursor: default;
+    /* background-image: url(../img/Roman.png);
+    background-position: 0 calc(-25%);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.bg-pic {
+    background-color: #2e1235;
+    background-image: url(../img/Roman.png);
+    background-position: 0 calc(20%);
+    background-size: calc(100%) calc(170%);
+    background-repeat: no-repeat;
+    /* animation: fadeIn 2s; */
 }
 
 .header {
@@ -13,7 +26,7 @@ body {
     color: #E5E7EB;
     padding: 0 20vh;
     align-items: center;
-    background-color: #1F2937;
+    background-color: #5d3da700;
 }
 
 .block {
@@ -28,14 +41,14 @@ body {
 
 .block.hero {
     display: flex;
-    background-color: #1F2937;
+    background-color: #1f293700;
     font-size: 18px;
     color: #E5E7EB;
     gap: 16px;
-    background-image: url(../img/Neo_Paraman.png);
+    /* background-image: url(../img/Roman.png);
     background-position: 0 calc(42%);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .hero-wrapper {
@@ -45,6 +58,7 @@ body {
     align-items: flex-start;
     flex: 1;
     gap: 1vh;
+    /* animation: fadeIn 3s; */
 }
 
 .pic-div {
@@ -101,61 +115,78 @@ body {
 .info-flex {
     display: flex;
     justify-content: center;
-    gap: 6vh;
+    gap: 6vw;
+    position: relative;
 }
 
 .img-text-container {
-    width: 11vh;
+    width: 11vw;
+    min-width: 9vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    animation: fadeIn 2s;
 }
 
 .info-img {
-    width: 11vh;
-    height: 11vh;
+    width: 13vw;
+    height: 7vw;
     border-width: 3px;
-    border-color: #3882F6;
+    border-color: #0d3068;
+    /* #0d3068 */
     border-style: solid;
     border-radius: 10px;
-    box-shadow: 3px 3px #a1c8ff60;
+    /* box-shadow: 3px 3px 3px #a1c8ff60; */
+    background-color: #2e1235;
 }
 
 .info-img.one {
     background-image: url(../img/F1\ Neon.png);
-    background-size: contain;
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    background-size: 13vw;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .info-img.two {
     background-image: url(../img/Green_F1.png);
-    background-size: contain;
+    background-size: 13vw;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 .info-img.three {
+    width: 13vw;
     background-image: url(../img/purple_circuit.png);
-    /* background-size: contain; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    background-size: 13vw;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .info-img.four {
     background-image: url(../img/Tennis_player.png);
-    background-size: contain;
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    background-size: 13vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-img.five {
+    background-image: url(../img/McLaren_F1.png);
+    background-size: 13vw;
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .info-img:hover {
+    transform: translate(-3px, -3px);
+    transition: 0.2s ease-in-out;
     border-width: 3px;
-    border-color: #0d3068;
+    border-color: #e78636;
+    /* #ec9e28 */
     border-style: solid;
     border-radius: 10px;
-    box-shadow: 6px 6px #265ba59c;
+    box-shadow: 5px 5px 6px #265ba59c;
 }
 
 .info-text {
@@ -180,6 +211,7 @@ body {
     font-style: italic;
     font-weight: 300;
     font-size: 3.5vh;
+    /* animation: fadeIn 2s; */
 }
 
 .author {
@@ -187,6 +219,7 @@ body {
     font-size: 24px;
     align-self: flex-end;
     margin-right: 3vh;
+    /* animation: fadeIn 3s; */
 }
 
 /* Sign block */
@@ -253,9 +286,18 @@ li {
     margin-right: auto;
 }
 
+.logo-pic {
+    margin: -10px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/AI-logo-var1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .footer {
     color: #E5E7EB;
-    background-color: #1F2937;
+    background-color: #2e1235;
     height: 6vh;
     padding: 0 20vh;
     align-content: center;
@@ -267,4 +309,14 @@ li {
     gap: 24px;
     padding: 0;
     margin: 12px 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

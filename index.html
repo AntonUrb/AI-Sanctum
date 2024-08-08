@@ -5,97 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/script.js"></script>
     <title>Flexbox Project</title>
 </head>
 
 <body>
-    <div class="header">
-        <ul class="navbar">
-            <li class="logo">Sanctonium</li>
-            <li>Gallery</li>
-            <li>About</li>
-            <li>Profile</li>
-        </ul>
+    <div class="bg-pic">
+        <div class="header">
+            <ul class="navbar">
+                <li class="logo-pic"></li>
+                <li class="logo">Sanctonium</li>
+                <li>Gallery</li>
+                <li>About</li>
+                <li>Profile</li>
+            </ul>
+        </div>
+
+        <div class="block hero">
+            <div class="hero-wrapper">
+                <div class="hero-head">
+                    Welcome to Sanctonium!
+                </div>
+                <div>
+                    This is where dreams are realized into pictures.
+                </div>
+                <button class="sign-btn">Sign up</button>
+            </div>
+            <div class="pic-div">
+                <div class="hero-pic">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="block hero">
-        <div class="hero-wrapper">
-            <div class="hero-head">
-                Welcome to Sanctonium!
+            <div class="block info">
+                <div class="info-wrapper">
+                    <div class="info-head">
+                        Showcase your talent in AI Art.
+                    </div>
+                    <div class="info-flex">
+                        <div class="img-text-container">
+                            <div class="info-img one">
+                            </div>
+                            <div class="info-text">
+                                Formula 1 neo-noir
+                            </div>
+                        </div>
+                        <div class="img-text-container">
+                            <div class="info-img two">
+                            </div>
+                            <div class="info-text">
+                                Formula 1 evergreen
+                            </div>
+                        </div>
+                        <div class="img-text-container">
+                            <div class="info-img three">
+                            </div>
+                            <div class="info-text">
+                                Hardware circuitry abstract
+                            </div>
+                        </div>
+                        <div class="img-text-container">
+                            <div class="info-img four">
+                            </div>
+                            <div class="info-text">
+                                Tennis player vector style
+                            </div>
+                        </div>
+                        <div class="img-text-container">
+                            <div class="info-img five">
+                            </div>
+                            <div class="info-text">
+                                McLaren F1 vector track race
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                This is where dreams are realized into pictures.
+            <div class="block quote">
+                <div class="phrase">
+                    We are more often frightened than hurt; and we suffer more from imagination than from reality.
+                </div>
+                <div class="author">
+                    -Seneca
+                </div>
             </div>
-            <button class="sign-btn">Sign up</button>
-        </div>
-        <div class="pic-div">
-            <div class="hero-pic">
+            <div class="block sign">
+                <div class="call-wrapper">
+                    <div class="call-para">
+                        <div class="call-head">
+                            Become an AI artist today!
+                        </div>
+                        <div class="call-text">
+                            Sign up and never look back! You'll have so much fun!
+                        </div>
+                    </div>
+                    <button class="sign-btn2">Sign up</button>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="footer">
+                Copyright © Sanctonium 2024
+            </div>
+            <script>
+                let button = document.querySelector(".sign-btn");
+                let button2 = document.querySelector(".sign-btn2");
+                let title = document.querySelector(".call-head");
+                let text = document.querySelector(".call-text");
+                // let a = 10;
+                // let b = 7 * a
 
-    <div class="block info">
-        <div class="info-wrapper">
-            <div class="info-head">
-                Showcase your talent in AI Art.
-            </div>
-            <div class="info-flex">
-                <div class="img-text-container">
-                    <div class="info-img one">
-                    </div>
-                    <div class="info-text">
-                        Formula 1 neo-noir
-                    </div>
-                </div>
-                <div class="img-text-container">
-                    <div class="info-img two">
-                    </div>
-                    <div class="info-text">
-                        Formula 1 evergreen
-                    </div>
-                </div>
-                <div class="img-text-container">
-                    <div class="info-img three">
-                    </div>
-                    <div class="info-text">
-                        Hardware circuitry abstract
-                    </div>
-                </div>
-                <div class="img-text-container">
-                    <div class="info-img four">
-                    </div>
-                    <div class="info-text">
-                        Tennis player vector style
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="block quote">
-        <div class="phrase">
-            We are more often frightened than hurt; and we suffer more from imagination than from reality.
-        </div>
-        <div class="author">
-            -Seneca
-        </div>
-    </div>
-    <div class="block sign">
-        <div class="call-wrapper">
-            <div class="call-para">
-                <div class="call-head">
-                    Become an AI artist today!
-                </div>
-                <div class="call-text">
-                    Sign up and never look back! You'll have so much fun!
-                </div>
-            </div>
-            <button class="sign-btn2">Sign up</button>
-        </div>
-    </div>
-    <div class="footer">
-        Copyright © Sanctonium 2024
-    </div>
+                const MAX = 57
+                let actual = MAX - 13
+                let percentage = actual / MAX
+
+
+                button.addEventListener("click", thankFunc);
+                button2.addEventListener("click", thankFunc);
+
+                function thankFunc() {
+                    title.textContent = "SIKE!"
+                    text.textContent = "It doesn't do anything"
+                }
+
+                /------------------------------/
+
+                let answer = (4 + 6 + 9) / 77;
+
+                let log = document.querySelector(".quote");
+
+                log.addEventListener("click", displayAnswer => {
+                    log.textContent = answer.toFixed(4)
+                })
+
+                // function displayAnswer() {
+                //     log.textContent = answer.toFixed(4);
+                // }
+
+                let arrowFunc = (answer, log) => console.log(answer + log.textContent)
+
+                arrowFunc(answer, log)
+
+                let add7 = n => n + 7
+                console.log(add7(2))
+
+                let multiply = (nr1, nr2) => nr1 * nr2
+                console.log(multiply(add7(4), 7))
+
+                let capitalize = function (string) {
+                    return string.charAt(0).toUpperCase() + string.slice(1)
+                }
+
+                console.log(capitalize("string"))
+
+                // console.log(9 * a)
+                // console.log(b)
+                console.log(percentage.toFixed(4))
+
+
+            </script>
 </body>
 
 </html>
