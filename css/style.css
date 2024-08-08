@@ -13,11 +13,10 @@ body {
 }
 
 .bg-pic {
+    background: url(../img/Roman.png) no-repeat center; 
     background-color: #2e1235;
-    background-image: url(../img/Roman.png);
-    background-position: 0 calc(20%);
-    background-size: calc(100%) calc(170%);
-    background-repeat: no-repeat;
+    background-position: 0 calc(30%);
+    background-size: cover;
     /* animation: fadeIn 2s; */
 }
 
@@ -33,7 +32,7 @@ body {
     background-color: #1F2937;
     flex: 1;
     flex-shrink: 0;
-    padding: 4vh 20vh;
+    padding: 3.5vh 20vh;
     max-height: 23vh;
 }
 
@@ -61,17 +60,21 @@ body {
     /* animation: fadeIn 3s; */
 }
 
-.pic-div {
+/* .pic-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-}
+} */
 
 .hero-head {
     font-size: 40px;
     font-weight: bolder;
     color: #F9FAF8;
+}
+
+.hero-desc {
+    padding-right: 60%;
 }
 
 .block.hero button {
@@ -279,11 +282,20 @@ li {
     cursor: pointer;
 }
 
-.logo {
+.logo-header {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 800;
     margin-right: auto;
+}
+
+.ai {
+    color: rgb(223, 84, 20);
+}
+
+.art {
+    font-weight: 800;
+    color: #d84c22c4;
 }
 
 .logo-pic {
