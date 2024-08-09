@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>AI Sanctum</title>
 </head>
@@ -26,7 +27,8 @@
                     <i>A Place for <span class="art">Art</span> & <span class="art">Age</span></i>
                 </div>
                 <div class="hero-desc">
-                    Where <strong>Dreams</strong> materialize into <strong>Reality</strong> and the line between Reality becomes a Dream
+                    Where <strong>Dreams</strong> materialize into <strong>Reality</strong> <br /> and the line between
+                    Reality becomes a Dream
                 </div>
                 <button class="sign-btn">Sign Up</button>
             </div>
@@ -37,131 +39,75 @@
         </div>
     </div>
 
-            <div class="block info">
-                <div class="info-wrapper">
-                    <div class="info-head">
-                        Showcase your Talent in AI Art.
+    <div class="block info">
+        <div class="info-wrapper">
+            <div class="info-head">
+                Showcase your Talent in AI Art.
+            </div>
+            <div class="info-flex">
+                <div class="img-text-container">
+                    <div class="info-img one">
                     </div>
-                    <div class="info-flex">
-                        <div class="img-text-container">
-                            <div class="info-img one">
-                            </div>
-                            <div class="info-text">
-                                Formula 1 neo-noir
-                            </div>
-                        </div>
-                        <div class="img-text-container">
-                            <div class="info-img two">
-                            </div>
-                            <div class="info-text">
-                                Formula 1 evergreen
-                            </div>
-                        </div>
-                        <div class="img-text-container">
-                            <div class="info-img three">
-                            </div>
-                            <div class="info-text">
-                                Hardware circuitry abstract
-                            </div>
-                        </div>
-                        <div class="img-text-container">
-                            <div class="info-img four">
-                            </div>
-                            <div class="info-text">
-                                Tennis player vector style
-                            </div>
-                        </div>
-                        <div class="img-text-container">
-                            <div class="info-img five">
-                            </div>
-                            <div class="info-text">
-                                McLaren F1 vector track race
-                            </div>
-                        </div>
+                    <div class="info-text">
+                        Formula 1 neo-noir
+                    </div>
+                </div>
+                <div class="img-text-container">
+                    <div class="info-img two">
+                    </div>
+                    <div class="info-text">
+                        Formula 1 evergreen
+                    </div>
+                </div>
+                <div class="img-text-container">
+                    <div class="info-img three">
+                    </div>
+                    <div class="info-text">
+                        Hardware circuitry abstract
+                    </div>
+                </div>
+                <div class="img-text-container">
+                    <div class="info-img four">
+                    </div>
+                    <div class="info-text">
+                        Tennis player vector style
+                    </div>
+                </div>
+                <div class="img-text-container">
+                    <div class="info-img five">
+                    </div>
+                    <div class="info-text">
+                        McLaren F1 vector track race
                     </div>
                 </div>
             </div>
-            <div class="block quote">
-                <div class="phrase">
-                    We are more often frightened than hurt; and we suffer more from imagination than from reality.
+        </div>
+    </div>
+    <div class="block quote">
+        <div class="phrase">
+            We are more often frightened than hurt; and we suffer more from imagination than from reality.
+        </div>
+        <div class="author">
+            -Seneca
+        </div>
+    </div>
+    <div class="block sign">
+        <div class="call-wrapper">
+            <div class="call-para">
+                <div class="call-head">
+                    Become an AI Legionary!
                 </div>
-                <div class="author">
-                    -Seneca
+                <div class="call-text">
+                    Sign up and Realize your Ancient Potential!
                 </div>
             </div>
-            <div class="block sign">
-                <div class="call-wrapper">
-                    <div class="call-para">
-                        <div class="call-head">
-                            Become an AI Legionary!
-                        </div>
-                        <div class="call-text">
-                            Sign up and Realize your Ancient Potential!
-                        </div>
-                    </div>
-                    <button class="sign-btn2">Sign Up</button>
-                </div>
-            </div>
-            <div class="footer">
-                Copyright © AI Sanctum 2024
-            </div>
-            <script>
-                let button = document.querySelector(".sign-btn");
-                let button2 = document.querySelector(".sign-btn2");
-                let title = document.querySelector(".call-head");
-                let text = document.querySelector(".call-text");
-                // let a = 10;
-                // let b = 7 * a
+            <button class="sign-btn2">Sign Up</button>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright © AI Sanctum 2024
+    </div>
 
-                const MAX = 57
-                let actual = MAX - 13
-                let percentage = actual / MAX
-
-
-                button.addEventListener("click", thankFunc);
-                button2.addEventListener("click", thankFunc);
-
-                function thankFunc() {
-                    title.textContent = "SIKE!"
-                    text.textContent = "It doesn't do anything"
-                }
-
-                /------------------------------/
-
-                let answer = (4 + 6 + 9) / 77;
-
-                let log = document.querySelector(".quote");
-
-                log.addEventListener("click", displayAnswer => {
-                    log.textContent = answer.toFixed(4)
-                })
-
-                // function displayAnswer() {
-                //     log.textContent = answer.toFixed(4);
-                // }
-
-                let arrowFunc = (answer, log) => console.log(answer + log.textContent)
-
-                arrowFunc(answer, log)
-
-                let add7 = n => n + 7
-                console.log(add7(2))
-
-                let multiply = (nr1, nr2) => nr1 * nr2
-                console.log(multiply(add7(4), 7))
-
-                let capitalize = function (string) {
-                    return string.charAt(0).toUpperCase() + string.slice(1)
-                }
-
-                console.log(capitalize("string"))
-
-                // console.log(9 * a)
-                // console.log(b)
-                console.log(percentage.toFixed(4))
-
-
-            </script>
 </body>
 
 </html>

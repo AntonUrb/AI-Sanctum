@@ -71,6 +71,7 @@ body {
     font-size: 40px;
     font-weight: bolder;
     color: #F9FAF8;
+    max-width: 50%;
 }
 
 .hero-desc {
@@ -295,7 +296,8 @@ li {
 
 .art {
     font-weight: 800;
-    color: #d84c22c4;
+    color: #d85519c4;
+    text-shadow: 1px 1px 3px #d34c0e79;
 }
 
 .logo-pic {
